@@ -1,0 +1,4 @@
+c:\users\sandeep\documents\visual studio 2010\Projects\mvc1\mvc1\bin\mvc1.dll
+c:\users\sandeep\documents\visual studio 2010\Projects\mvc1\mvc1\bin\mvc1.pdb
+c:\users\sandeep\documents\visual studio 2010\Projects\mvc1\mvc1\obj\Debug\mvc1.dll
+c:\users\sandeep\documents\visual studio 2010\Projects\mvc1\mvc1\obj\Debug\mvc1.pdb

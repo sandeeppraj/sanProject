@@ -1,0 +1,33 @@
+﻿$(document).ready(function () {
+    $('#btn-login').click(function () {
+        var name ="info@baabtra.com";
+        var passwd = $("#password").val();
+
+        $.ajax(
+                {
+                    'url': 'http://services.trainees.baabtra.com/LoginService/login.php',
+                    'DataType': 'jsonp',
+                    'data': { email: name, password: passwd },
+                    success: function (data) {
+                        var obj = jQuery.parseJSON(data);
+                        console.log(obj);
+                        if (obj[0].ResponseCode == 200) {
+                            // window.location.href = ("../../Home/mvcsuccess.aspx?image=" + obj[0].vchr_prof_pic + "");
+                            window.location.href = ("/Home/success");
+                        }
+                        
+                        else {
+                            window.location.href = ("/Home/Wrongpassword");
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data);
+                    }
+                });
+
+    });
+});
+
+
+
+
